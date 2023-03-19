@@ -7,6 +7,7 @@ RUN apt update && \
     apt install -y software-properties-common apt-utils && \
     sed -r -i 's/^deb(.*)$/deb\1 contrib/g' /etc/apt/sources.list && \
     apt update && \
-    apt install -y ttf-mscorefonts-installer
+    apt install -y ttf-mscorefonts-installer && \
+    apt-get clean
 
 WORKDIR /docs
