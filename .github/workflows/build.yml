@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - master
+  schedule:
+    # 每周二早上10点运行
+    - cron: '0 10 * * 2'
 
 env:
   REGISTRY: ghcr.io
