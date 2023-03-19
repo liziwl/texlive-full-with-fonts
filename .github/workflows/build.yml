@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       # 根据输入自动生成 tag 和 label 等数据，说明见下
-      - name: Extract metadata for Docker
+      - name: Extract metadata for Container
         id: meta
         uses: docker/metadata-action@v4
         with:
