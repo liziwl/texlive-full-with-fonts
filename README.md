@@ -8,7 +8,11 @@ This is a custom Dockerfile that extends the official [texlive docker image](htt
 ### Download image
 
 ```bash
+## GitHub Container registry (SLOW in China)
 docker pull ghcr.io/liziwl/texlive-full-with-fonts:latest
+
+## Coding Container registry (Recommended to be used in China)
+docker pull liziwl-docker.pkg.coding.net/container-registry/main/texlive-full-with-fonts:latest
 ```
 
 ### Compile document
