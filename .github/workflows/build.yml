@@ -7,9 +7,6 @@ on:
   push:
     branches:
       - master
-  schedule:
-    # 每周二早上10点运行
-    - cron: '0 10 * * 2'
 
 env:
   REGISTRY: ghcr.io
@@ -22,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        texlive: [latest, TL2022-historic, TL2021-historic, TL2020-historic, TL2019-historic]
+        texlive: [latest, TL2023-historic, TL2022-historic, TL2021-historic, TL2020-historic, TL2019-historic]
         # 多版本 TexLive
         # 版本号选自：https://hub.docker.com/r/texlive/texlive/tags
     permissions:
